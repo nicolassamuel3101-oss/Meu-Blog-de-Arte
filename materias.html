@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias - Blog Art Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .blog-text {
+            color: #2196F3;
+        }
+        
+        .art-text {
+            color: #F44336;
+        }
+        
+        .style-text {
+            color: #9C27B0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+        
+        .materias-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .materia-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .materia-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .materia-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        .materia-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .materia-card .data {
+            color: #999;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+        
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .materias-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>
+                <span class="blog-text">Blog</span> 
+                <span class="art-text">Art</span> 
+                <span class="style-text">Style</span>
+            </h1>
+            <p>Matérias e Conteúdos sobre Arte</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <a href="site.html" class="back-btn">← Voltar para Home</a>
+        
+        <h2>Matérias em Destaque</h2>
+        
+        <div class="materias-grid">
+            <div class="materia-card">
+                <h3>História da Arte Digital</h3>
+                <p>Explore a evolução da arte digital desde seus primórdios até as tendências atuais. Descubra como a tecnologia transformou a criação artística.</p>
+                <p class="data">Publicado em: 15/01/2025</p>
+            </div>
+            
+            <div class="materia-card">
+                <h3>Técnicas de Pintura Digital</h3>
+                <p>Aprenda as principais técnicas utilizadas por artistas digitais profissionais. Do esboço à finalização, domine o processo criativo.</p>
+                <p class="data">Publicado em: 10/01/2025</p>
+            </div>
+            
+            <div class="materia-card">
+                <h3>Os Grandes Mestres da Ilustração</h3>
+                <p>Conheça os artistas que revolucionaram a ilustração contemporânea e suas influências no mercado atual.</p>
+                <p class="data">Publicado em: 05/01/2025</p>
+            </div>
+            
+            <div class="materia-card">
+                <h3>Ferramentas Essenciais para Artistas</h3>
+                <p>Descubra quais são as ferramentas e softwares mais utilizados por artistas digitais em 2025.</p>
+                <p class="data">Publicado em: 28/12/2024</p>
+            </div>
+            
+            <div class="materia-card">
+                <h3>Arte e Inteligência Artificial</h3>
+                <p>Como a IA está transformando o cenário artístico? Analisamos os prós e contras dessa revolução.</p>
+                <p class="data">Publicado em: 20/12/2024</p>
+            </div>
+            
+            <div class="materia-card">
+                <h3>Carreira em Artes Visuais</h3>
+                <p>Guia completo para quem deseja seguir carreira nas artes visuais: formação, mercado de trabalho e dicas profissionais.</p>
+                <p class="data">Publicado em: 15/12/2024</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Blog Art Style. Todos os direitos Nicolas.</p>
+    </footer>
+</body>
+</html>

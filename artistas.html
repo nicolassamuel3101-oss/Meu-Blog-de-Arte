@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas - Blog Art Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .blog-text {
+            color: #2196F3;
+        }
+        
+        .art-text {
+            color: #F44336;
+        }
+        
+        .style-text {
+            color: #9C27B0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+        
+        .artistas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .artista-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .artista-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .artista-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .artista-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid #f0f0f0;
+        }
+        
+        .artista-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .artista-info .especialidade {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .artista-bio {
+            color: #555;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        
+        .artista-contato {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .contato-btn {
+            padding: 8px 15px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .contato-btn:hover {
+            background-color: #555;
+        }
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .tag {
+            background-color: #e0e0e0;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+        
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .artistas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .artista-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .artista-avatar {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>
+                <span class="blog-text">Blog</span> 
+                <span class="art-text">Art</span> 
+                <span class="style-text">Style</span>
+            </h1>
+            <p>Conheça Nossos Artistas</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <a href="site.html" class="back-btn"> Voltar para Home</a>
+        
+        <h2>Artistas em Destaque</h2>
+        
+        <div class="artistas-grid">
+            <div class="artista-card">
+                <div class="artista-header">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Ana Silva" class="artista-avatar">
+                    <div class="artista-info">
+                        <h3>Ana Silva</h3>
+                        <p class="especialidade">Ilustradora Digital</p>
+                    </div>
+                </div>
+                <p class="artista-bio">Especialista em ilustração digital e concept art para jogos. Com mais de 8 anos de experiência no mercado de entretenimento.</p>
+                <div class="tags">
+                    <span class="tag">Photoshop</span>
+                    <span class="tag">Procreate</span>
+                    <span class="tag">Concept Art</span>
+                </div>
+                <div class="artista-contato">
+                    <a href="#" class="contato-btn">Portfólio</a>
+                    <a href="#" class="contato-btn">Contato</a>
+                </div>
+            </div>
+            
+            <div class="artista-card">
+                <div class="artista-header">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Carlos Mendes" class="artista-avatar">
+                    <div class="artista-info">
+                        <h3>Carlos Mendes</h3>
+                        <p class="especialidade">Pintor Realista</p>
+                    </div>
+                </div>
+                <p class="artista-bio">Mestre em pintura a óleo e técnicas realistas. Formado pela Escola de Belas Artes com exposições internacionais.</p>
+                <div class="tags">
+                    <span class="tag">Óleo</span>
+                    <span class="tag">Realismo</span>
+                    <span class="tag">Retratos</span>
+                </div>
+                <div class="artista-contato">
+                    <a href="#" class="contato-btn">Galeria</a>
+                    <a href="#" class="contato-btn">Aulas</a>
+                </div>
+            </div>
+            
+            <div class="artista-card">
+                <div class="artista-header">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Marina Oliveira" class="artista-avatar">
+                    <div class="artista-info">
+                        <h3>Marina Oliveira</h3>
+                        <p class="especialidade">Arte Abstrata</p>
+                    </div>
+                </div>
+                <p class="artista-bio">Explorando cores e formas na arte abstrata contemporânea. Suas obras estão em galerias na Europa e América do Sul.</p>
+                <div class="tags">
+                    <span class="tag">Acrílica</span>
+                    <span class="tag">Abstrato</span>
+                    <span class="tag">Mista</span>
+                </div>
+                <div class="artista-contato">
+                    <a href="#" class="contato-btn">Exposições</a>
+                    <a href="#" class="contato-btn">Compras</a>
+                </div>
+            </div>
+            
+            <div class="artista-card">
+                <div class="artista-header">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Rafael Costa" class="artista-avatar">
+                    <div class="artista-info">
+                        <h3>Rafael Costa</h3>
+                        <p class="especialidade">Escultor</p>
+                    </div>
+                </div>
+                <p class="artista-bio">Trabalhando com esculturas em madeira e metal. Suas obras exploram a relação entre forma e espaço na arte tridimensional.</p>
+                <div class="tags">
+                    <span class="tag">Madeira</span>
+                    <span class="tag">Metal</span>
+                    <span class="tag">Escultura</span>
+                </div>
+                <div class="artista-contato">
+                    <a href="#" class="contato-btn">Atelier</a>
+                    <a href="#" class="contato-btn">Comissões</a>
+                </div>
+            </div>
+            
+            <div class="artista-card">
+                <div class="artista-header">
+                    <img src="https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Juliana Santos" class="artista-avatar">
+                    <div class="artista-info">
+                        <h3>Juliana Santos</h3>
+                        <p class="especialidade">Grafite e Street Art</p>
+                    </div>
+                </div>
+                <p class="artista-bio">Artista urbana transformando espaços públicos com cores e mensagens sociais. Participante de festivais internacionais de street art.</p>
+                <div class="tags">
+                    <span class="tag">Grafite</span>
+                    <span class="tag">Spray</span>
+                    <span class="tag">Urbano</span>
+                </div>
+                <div class="artista-contato">
+                    <a href="#" class="contato-btn">Murais</a>
+                    <a href="#" class="contato-btn">Workshops</a>
+                </div>
+            </div>
+            
+            <div class="artista-card">
+                <div class="artista-header">
+                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Fernando Lima" class="artista-avatar">
+                    <div class="artista-info">
+                        <h3>Fernando Lima</h3>
+                        <p class="especialidade">Fotógrafo Artístico</p>
+                    </div>
+                </div>
+                <p class="artista-bio">Explorando a fronteira entre fotografia e arte digital. Suas obras questionam a percepção da realidade através da lente.</p>
+                <div class="tags">
+                    <span class="tag">Fotografia</span>
+                    <span class="tag">Digital</span>
+                    <span class="tag">Manipulação</span>
+                </div>
+                <div class="artista-contato">
+                    <a href="#" class="contato-btn">Portfólio</a>
+                    <a href="#" class="contato-btn">Exposições</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Blog Art Style. Todos os direitos Nicolas.</p>
+    </footer>
+</body>
+</html>
